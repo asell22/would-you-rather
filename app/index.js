@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 const Main = React.createClass({
   render () {
     return (
-      <p>Hello World</p>
+      <p>Hello Alex</p>
     )
   }
 })

@@ -16,6 +16,7 @@ const PATHS = {
 const LAUNCH_COMMAND = process.env.npm_lifecycle_event
 
 const isProduction = LAUNCH_COMMAND === 'production'
+process.env.BABEL_ENV = LAUNCH_COMMAND
 
 const productionPlugin = new webpack.DefinePlugin({
   'process.env': {
@@ -41,7 +42,13 @@ const base = {
 
 const developmentConfig = {
   devtool: 'cheap-module-inline-source-map',
-  plugins: [HtmlWebpackPluginConfig]
+  plugins: [HtmlWebpackPluginConfig, new webpack.HotModuleReplacementPlugin()],
+  devServer: {
+    contentBase: PATHS.build,
+    hot: true,
+    inline: true,
+    progress: true,
+  },
 }
 const productionConfig = {
   devtool: 'cheap-module-source-map',
