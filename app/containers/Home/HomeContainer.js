@@ -1,9 +1,9 @@
 import React from 'react'
-import { color } from './styles.css'
+import { header } from './styles.css'
 const HomeContainer = React.createClass({
   render () {
     return (
-      <p className={color}>{'Home Component'}</p>
+      <h1 className={ header }>{'Would You Rather'}</h1>
     )
   }
 })
