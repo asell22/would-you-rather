@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { big } from './styles.css'
 
 const Main = React.createClass({
   render () {
     return (
-      <p>Hello Alex</p>
+      <p className="big">{'Hello Alex'}</p>
     )
   }
 })
