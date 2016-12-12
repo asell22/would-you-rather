@@ -1,6 +1,6 @@
 .header {
   border: none;
-  margin: 100px auto;
+  margin: 100px auto 0px;
   padding: 0em 0em;
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: 300;
@@ -8,5 +8,15 @@
   text-align: center;
   line-height: 1.2857em;
   text-transform: none;
+  color: #B5CC18;
+}
+
+.subheader {
+  display: block;
+  font-weight: normal;
+  font-size: 22px;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  text-align: center;
+  line-height: 1.2em;
   color: #B5CC18;
 }
