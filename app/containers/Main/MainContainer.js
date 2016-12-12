@@ -3,7 +3,7 @@ const MainContainer = React.createClass({
   render () {
     return (
       <div>
-        <p>{'Hello Alex'}</p>
+        <h1>{'Hello Alex'}</h1>
         <p>{this.props.children}</p>
       </div>
     )

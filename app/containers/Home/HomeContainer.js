@@ -1,8 +1,9 @@
 import React from 'react'
+import { color } from './styles.css'
 const HomeContainer = React.createClass({
   render () {
     return (
-      <p>{'Home Component'}</p>
+      <p className={color}>{'Home Component'}</p>
     )
   }
 })
